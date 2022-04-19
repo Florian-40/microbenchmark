@@ -5,19 +5,26 @@
 \title{Autoplot method for microbenchmark objects: Prettier graphs for
 microbenchmark using ggplot2}
 \usage{
-autoplot.microbenchmark(
+\method{autoplot}{microbenchmark}(
   object,
+  expression,
   ...,
   log = TRUE,
+  y_min = 0.95 * min(object$time),
   y_max = 1.05 * max(object$time)
 )
 }
 \arguments{
 \item{object}{A microbenchmark object}
 
-\item{\dots}{Ignored}
+\item{expression}{Label of valued expression}
+
+\item{\dots}{hyperparameter of scale_y_log10 or scale_y_continuous}
 
 \item{log}{If \code{TRUE} the time axis will be on log scale.}
+
+\item{y_min}{The lower limit of the y axis (defaults to 5 percent less than
+the minimum value)}
 
 \item{y_max}{The upper limit of the y axis (defaults to 5 percent more than
 the maximum value)}
@@ -28,17 +35,6 @@ A ggplot2 plot
 \description{
 Uses ggplot2 to produce a more legible graph of microbenchmark timings
 }
-\examples{
-if (requireNamespace("ggplot2")) {
-
-tm <- microbenchmark(rchisq(100, 0),
-                     rchisq(100, 1),
-                     rchisq(100, 2),
-                     rchisq(100, 3),
-                     rchisq(100, 5), times=1000L)
-ggplot2::autoplot(tm)
-}
-}
 \author{
-Ari Friedman, Olaf Mersmann
+Ari Friedman, Olaf Mersmann, Florian Robert
 }
