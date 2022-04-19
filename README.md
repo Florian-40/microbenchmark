@@ -12,7 +12,7 @@ The maintainers of `microbenchmark` and thousands of other packages are working 
 To install the bleeding edge version from GitHub run (requires the `remotes` package):
 
 ```r
-remotes::install_github("joshuaulrich/microbenchmark")
+remotes::install_github("Florian-40/microbenchmark")
 ```
 
 [![CRAN Status Badge](http://www.r-pkg.org/badges/version/microbenchmark)](http://cran.r-project.org/web/packages/microbenchmark)
