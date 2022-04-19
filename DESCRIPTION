@@ -8,8 +8,8 @@ Authors@R: c(person("Olaf", "Mersmann", role=c("aut")),
         person("Ari", "Friedman", role=c("ctb")),
         person(given=c("Joshua","M."), family="Ulrich", role="cre",
                email="josh.m.ulrich@gmail.com"))
-URL: https://github.com/joshuaulrich/microbenchmark/
-BugReports: https://github.com/joshuaulrich/microbenchmark/issues/
+URL: https://github.com/Florian-40/microbenchmark/
+BugReports: https://github.com/Florian-40/microbenchmark/issues/
 License: BSD_2_clause + file LICENSE
 Imports: graphics, stats
 Encoding: UTF-8

@@ -5,7 +5,7 @@
 \title{Autoplot method for microbenchmark objects: Prettier graphs for
 microbenchmark using ggplot2}
 \usage{
-\method{autoplot}{microbenchmark}(
+autoplot.microbenchmark(
   object,
   expression,
   ...,
