@@ -5,9 +5,10 @@
 \title{Autoplot method for microbenchmark objects: Prettier graphs for
 microbenchmark using ggplot2}
 \usage{
-autoplot.microbenchmark(
+\method{autoplot}{microbenchmark}(
   object,
   expression,
+  breaks = c(0, 1e-05, 1e-04, 0.001, 0.01, 0.1, 1, 10, 100, 1000, 10000, 1e+05),
   ...,
   log = TRUE,
   y_min = 0.95 * min(object$time),
@@ -19,7 +20,9 @@ autoplot.microbenchmark(
 
 \item{expression}{Label of valued expression}
 
-\item{\dots}{hyperparameter of scale_y_log10 or scale_y_continuous}
+\item{breaks}{break of scale_y_log10 if \code{log=TRUE}.}
+
+\item{\dots}{hyperparameter of  scale_y_continuous}
 
 \item{log}{If \code{TRUE} the time axis will be on log scale.}
 

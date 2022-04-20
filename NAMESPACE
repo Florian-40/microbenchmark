@@ -9,6 +9,7 @@ if (getRversion() >= "3.6.0") {
 export(get_nanotime)
 export(microbenchmark)
 export(microtiming_precision)
+import(scales)
 importFrom(graphics,boxplot)
 importFrom(stats,aggregate)
 importFrom(stats,fivenum)
